@@ -1,0 +1,23 @@
+body{
+      background-color: black;
+    color :white; 
+    font-family: cursive;
+}
+#heading{
+    color: greenyellow;
+    text-align: center ;
+    font-weight: bolder;
+    
+}
+img{
+width: 100%;}
+#main{
+    background-image: url("https://i.pinimg.com/originals/4b/00/89/4b0089feda3d6298bb941911e0f1887c.jpg");
+    background-size: cover;
+}
+#subheading{
+    color: greenyellow;
+}
+ul{
+    color: white;
+}
