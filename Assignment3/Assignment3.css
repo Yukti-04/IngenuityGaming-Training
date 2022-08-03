@@ -1,8 +1,96 @@
-.btn{
-    background-color: red;
-    border: none;
-    left: 50px;
+*{
+    margin: 0%;
+    padding: 0%;
 }
-.background{
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/206/804/970/soccer-robert-lewandowski-fc-bayern-munich-polish-wallpaper-preview.jpg");
+body{
+    background-color: rgb(36, 36, 2);
 }
+div.para{
+    position:relative;
+}
+img{
+    width:100%;
+    height:100vh;
+    z-index:-1;
+
+}
+h1{
+    position:absolute;
+    top: 30%;
+    left: 28%;
+    font-family: fantasy;
+    color: white;
+    font-size: 55px;
+}
+p.hello{
+    position:absolute;
+    top: 270px;
+    left: 150px;
+    font-family: fantasy;
+    color: white;
+    font-size: 15px;
+}
+a{
+    position:absolute;
+    top: 320px;
+    left: 550px;
+    font-family: fantasy;
+    color: white;
+    font-size: 15px;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    background-color:black;
+}
+p.first{
+    background-color: rgb(112, 7, 7);
+    font-family: fantasy;
+    font-size:20px;
+    text-align:center;
+    padding:50px;
+}
+p.second{
+    background-color: rgb(112, 7, 7);
+    font-family: fantasy;
+    font-size:20px;
+    text-align:center;
+    padding:50px;
+    color: sienna;
+}
+
+div.hello{
+    float :left;
+    color:sienna;
+    width: 26%;
+    padding:3%;
+    background-color:black;
+    font-family: fantasy;
+    font-size: 20px;
+    text-align: center;
+}
+div.hello2{
+    float :left;
+    color:sienna;
+    width: 26%;
+    padding:3%;
+    background-color: white;
+    font-family: fantasy;
+    font-size: 20px;
+    text-align: center;
+}
+div.hello3{
+    float: left;
+    width:26%;
+    padding:3%;
+    font-family: fantasy;
+    font-size:20px;
+    text-align:center;
+    color:sienna;
+    background-color: black;
+}
+
