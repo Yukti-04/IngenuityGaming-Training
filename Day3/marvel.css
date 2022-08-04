@@ -1,0 +1,235 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
+}
+.container{
+    max-width: 100%;
+    height: auto;
+}
+header{
+    background-image: url("https://images.hdqwalls.com/wallpapers/thor-in-marvels-avengers-4k-wt.jpg");
+    text-align: left;
+    color: white;
+    padding-right: 100px;
+    padding-top: 200px;
+    height: 80vh;
+    background-size: cover;
+    font-size: 50px;
+    font-family: 'Tapestry', cursive;
+}
+nav{
+    overflow: hidden;
+   background-color: black;
+   padding: 2px;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   height: 5vh;
+   font-family: 'Charm', cursive;
+   position: fixed;
+   width: 100%;
+}
+a
+{
+    float: left;
+    color: orange;
+    padding: 20px 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#About h1{
+    font-family: 'Tapestry', cursive;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+    padding-top: 5vh;
+}
+#About{
+    background-image: url("https://www.wallpaperflare.com/static/764/665/82/nikon-d5-camera-dslr-digital-wallpaper.jpg");
+    height: 105vh;
+    background-size: 70%;
+}
+.information{
+    border: 2px solid white;
+    height: 77vh;
+    font-family: 'Markazi Text', serif;
+    color: white;
+    font-size: 33px;
+    width: 75%;
+    margin: auto;
+    background-color: rgb(0,0,0,0.9);
+    padding: 25px;
+}
+#marvel{
+    background-image: url("https://images4.alphacoders.com/255/thumb-1920-255596.jpg");
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+#marvel h2{
+    font-size: 90px;
+    padding-top: 10vh;
+}
+#card{
+    background-color: black;
+    width: 20%;
+    height: 650px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#caption{
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Tapestry', cursive;
+    font-size: 20px;
+}
+#caption h3{
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: ;
+    padding: 20px;
+    font-family: 'Tapestry', cursive;
+    color: greenyellow;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#Types{
+    background-image: url("https://iso.500px.com/wp-content/uploads/2016/10/stock-photo-159358357.jpg");
+    color: white;
+    height: 99vh;
+    background-size: cover;
+    padding: 20px;
+}
+#compContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Types h1{
+    color: black;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 30px;
+    font-family: 'Tapestry', cursive;
+}
+#listElements{
+    width: 48%;
+    float: left;
+    padding: 10px;
+    font-size: 37px; 
+    background-color: rgb(0,0,0,0.9);
+    border-radius: 20px;
+    font-family: 'Markazi Text', serif;
+}
+#aside{
+    width: 48%;
+    float: right;
+    padding: 10px;
+    font-size: 35px; 
+    background-color: rgb(0,0,0,0.9);
+    border-radius: 20px;
+    height: 700px;
+    font-family: 'Markazi Text', serif;
+}
+.div1{
+    border: 2px solid white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+}
+#TopPhoto{
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Sony-camera-backgrounds-1920x1080.jpg");
+    background-size: 80%;
+    padding: 20px;
+    text-align: center;
+    height: 75vh;
+}
+#TopPhoto h2{
+    font-size: 50px;
+    padding-top: 3vh;
+    color: white;
+    font-family: 'Tapestry', cursive;
+    padding-bottom: 20px;
+}
+#TopPhoto #card{
+    background-color: black;
+    width: 20%;
+    height: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px double white;
+}
+#TopPhoto caption{
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Charm', cursive;
+    font-size: 20px;
+}
+#caption h3{
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: ;
+    padding: 20px;
+    font-family: 'Charm', cursive;
+    color: greenyellow;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+#fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    background-color: white;
+}
+#footer{
+    background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80");
+    height: auto;
+}
+#footer h1{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.copyright{
+    overflow: hidden;
+   padding: 2px;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   height: 5vh;
+   font-family: 'Charm', cursive;
+   width: 100%;
+}
+.copyright a{
+    color: yellow;
+}
+.sources a{
+    width: 50%;
+    padding: 20px 20px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Tapestry', cursive;
+}

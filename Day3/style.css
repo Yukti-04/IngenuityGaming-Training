@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    background-color: black;
+    border-color: red ;
+    border:2px solid red;
+}
+header{
+    color:rgb(179, 27, 6);
+    display: flex;
+    justify-content: center; 
+     align-items: center; 
+    background-color:black;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: larger;
+        height: 15vh;
+}
+#main{
+    color: White;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 85vh;
+    background-color: rgb(1, 15, 15);
+    padding-bottom: 300px;
+}
+section{
+    color: White;
+    text-align: center;
+    height: 500px;
+    font-size:50px;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    color: White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div #card1{
+    border-radius: 15% 15% 15% 15%;
+   justify-content: space-evenly;
+display: flex;
+  }
+  #Cameras{
+    background-image: url("https://wallpaperaccess.com/full/1444231.jpg");
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+#Cameras h2{
+    font-size: 90px;
+    padding-top: 10vh;
+}
+#card{
+    background-color: black;
+    width: 20%;
+    height: 650px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#caption{
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Tapestry', cursive;
+    font-size: 20px;
+}
+#caption h3{
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: monospace;
+    padding: 20px;
+    font-family: 'Tapestry', cursive;
+    color: greenyellow;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
