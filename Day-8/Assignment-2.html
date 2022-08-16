@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 Question 2</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<script>
+        function copy(){
+            var a=["A","B","C","D"];
+            var newA=[];
+            a.forEach(function(item){
+                newA.push(item);
+            });
+            document.write('<h1 style="text-align: center; color: white; font-size: 80px; font-weight: bold;"> New array with values same as that of '+ a +' is: '+newA+'</h1>');
+        }
+        copy();
+    </script>
+</body>
+</html>

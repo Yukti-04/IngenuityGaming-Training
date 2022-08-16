@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 question 4</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a=[1,2,3,4,["Hello"]];
+        document.write('<h1 style="text-align: center; color: green; font-size: 50px; font-weight: bold;">Original Array:' + a+' </h1>');
+        a[4][0]="How are you";
+        a[4][1]=[1,2,["Hello"]];
+        document.write('<h1 style="text-align: center; color: yellow; font-size: 50px; font-weight: bold;">New Array:' + a+' </h1>');
+    </script>
+</body>
+</html>
