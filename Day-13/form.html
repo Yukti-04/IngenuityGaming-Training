@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Itim&family=Kalam:wght@700&family=Rock+Salt&family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("https://wallpaperaccess.com/full/3124512.jpg");
+            overflow: hidden;
+        }
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        #form{
+          background-color: rgba(0, 255, 255, 0.322);  
+          width: 75%;
+          margin: auto;
+          padding-left: 20px;
+          padding-bottom: 20px;
+          height: 875px;
+          color: white
+        }
+        h1{
+            text-align: center;
+            font-family: 'Kalam', cursive;
+            font-size: 50px;
+            color: white;
+            text-transform: uppercase;
+        }
+        h3{
+            text-align: center;
+            padding-top: 10px;
+            font-family: 'Satisfy',cursive;
+            font-size: 50px;
+            color: ivory;
+            text-shadow: 10px 10px 10px black;
+        }
+        #container{
+            width: 50%;
+            margin: auto;
+            padding-top:10px ;
+            background-color: rgba(0, 0, 0, 0.774);
+            padding-bottom: 50px;
+        }
+        form{
+            font-size: 30px;
+            padding: 10px;
+            font-family: 'Sriracha',cursive;
+            text-align: center;
+        }
+        input[type=text], input[type=number], input[type=email]{
+        text-align: center;
+        }
+        textarea,textarea::placeholder{
+            text-align: center;
+            width: 100%;
+            background-color: rgba(0, 255, 255, 0);
+            padding: 2%;
+            font-size: 20px;
+            color: white;
+            height: auto;
+            font-family: 'Itim', cursive;
+            overflow: hidden;
+            margin: 10px 0px; 
+        }
+        .feel{
+            text-align: center;
+            padding: 10px 10px;
+        }
+        input[type=submit]{
+            width: 30%;
+            height: auto;
+            margin: auto;
+            font-size: 30px;
+            font-family: 'Rock Salt', cursive;
+            border-radius: 50%;
+            /* padding:1%; */
+            margin-top: 10px;
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Contact Form</h1>
+        <div id="form">
+            <h3>Tell us something about You</h3>
+            <form>
+                <label for="Name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+                <label for="Email">Email: </label>
+                <input type="email" name="Email" id="Email" placeholder="Enter your email"><br>
+                <label for="Rate">Rate Us on the scale of 10: </label>
+                <input type="number" name="Rate" id="Rate" placeholder="Rate us"><br>
+                <label for="place">You are accessing this website from: </label>
+                <input list="place" name="place">
+                <datalist id="place">
+                    <option value="Home">
+                    <option value="Office">
+                    <option value="School">
+                    <option value="Others">
+                </datalist><br>
+                <label for="time">What's the best time to contact you: </label>
+                <p class="feel"><input type="radio" id="time" name="morning">Morning
+                <input type="radio" id="time" name="afternoon"> Afternoon
+                <input type="radio" id="time" name="evening"> Evening
+                <input type="radio" id="time" name="night"> Night</p>
+                <label for="feel" class="f">How do you do(check all if you are confused): </label>
+                <p class="feel"><input type="checkbox" id="feel" name="Happy">Happy
+                <input type="checkbox" id="feel" name="Sad">Sad
+                <input type="checkbox" id="feel" name="Cheerful">Cheerful
+                <input type="checkbox" id="feel" name="Frustated">Frustated</p>
+                <label for="write">Write about what you liked and what you dislike: </label><br>
+                <textarea id="write" name="write" placeholder="Write here"></textarea><br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html> 
