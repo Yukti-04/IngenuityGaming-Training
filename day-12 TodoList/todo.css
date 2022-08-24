@@ -1,0 +1,110 @@
+/* ------------Initial Phase CSS---------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("http://pm1.narvii.com/7312/f587bb62b0552ff10188d5a31d24b12187724957r1-1280-720v2_uhq.jpg");
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-size: cover;
+  }
+  header,
+  form {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-right: 5%;
+    
+  }
+  header {
+    font-size: 90px;
+    font-family: 'Rubik Dirt', cursive;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(243, 150, 10);
+    color: rgb(10, 235, 28);
+  }
+  
+  form input,
+  form button {
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    background: white;
+    box-shadow: 2px 2px 2px gold;
+
+  }
+  form button {
+    color: black;
+    background-color: gold;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  form button:hover {
+    color: gold;
+    background-color: black;
+    box-shadow: 2px 2px 2px gold;
+  }
+  
+
+  /* ----------------New List Container----------------- */
+  
+
+  .todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 39%;
+}
+.todo-list{
+    list-style: none;
+    min-width:25%;
+}
+.tododiv
+{
+    background-color: white;
+    font-size: 24px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.tododiv li{
+    flex: 1;
+}
+.tododiv_check{
+    color: white;
+    background-color: teal;
+    border: none;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+}
+.tododiv_end{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+}
+.tododiv_item
+{
+    margin: 0px 10px;
+}
+
+.fa
+{
+    pointer-events: none;
+}
+.done{
+    text-decoration: line-through;
+    opacity: .5;
+}
