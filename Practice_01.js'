@@ -1,1 +1,9 @@
-console.log("hello world")
+// console.log("hello world")
+// const practice ={
+//     "hello" :"world",
+//     "dipesh": "kala",
+//     "dipeshage": 20
+// }
+// console.log(practice)
+let a="10"
+console.log(Number(a)+10)

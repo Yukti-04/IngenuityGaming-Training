@@ -1,0 +1,150 @@
+body {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Grass-hd-wallpaper-download.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size: 82px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 5%;
+    animation: heading 5s linear infinite;
+  }
+  @keyframes heading {
+    0%{
+        transform: translateY(-100px);
+        color: red;
+    }    
+    50%{
+        transform: translateY(0px);
+        color: green;
+    } 
+    100%{
+        transform: translateY(-100px);
+        color: blue;
+    } 
+  }
+  
+  #mole {
+    position: fixed;
+    left: 39%;
+    top: 20%;
+    
+  }
+  #dirt {
+    position: fixed;
+    left: 35%;
+    width: 550px;
+    top: 50%;
+    
+  }
+  #start {
+    height: auto;
+    width: auto;
+    background-color: black;
+    color: floralwhite;
+    font-size: 100px;
+    border-radius: 30px;
+    font-family: 'Aladin', cursive;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    padding: 20px;
+    cursor: pointer;
+    animation: button1 5s linear infinite;
+  }
+  @keyframes button1 {
+    0%{
+        transform: translateX(-50px);
+        color: yellow;
+        box-shadow: 2px 2px 2px blue;
+    }    
+    50%{
+        transform: translateX(100px);
+        color: green;
+        box-shadow: 2px 2px 2px red;
+    } 
+    100%{
+        transform: translateX(-50px);
+        color: yellowgreen;
+        box-shadow: 2px 2px 2px blue;
+    } 
+  }
+  .dirt {
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+  }
+  #dirt1 {
+    top: 52%;
+    left: 15%;
+  }
+  #dirt2 {
+    top: 75%;
+    left: 15%;
+  }
+  #dirt3 {
+    top: 52%;
+    left: 45%;
+  }
+  #dirt4 {
+    top: 75%;
+    left: 45%;
+  }
+  #dirt5 {
+    top: 52%;
+    left: 75%;
+  }
+  #dirt6 {
+    top: 75%;
+    left: 75%;
+  }
+  .points {
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+  }
+  .mole {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    visibility: hidden;
+  }
+  #mole1 {
+    top: 40%;
+    left: 19%;
+  }
+  #mole2 {
+    top: 40%;
+    left: 49%;
+  }
+  #mole3 {
+    top: 40%;
+    left: 79%;
+  }
+  #mole4 {
+    top: 65%;
+    left: 19%;
+  }
+  #mole5 {
+    top: 65%;
+    left: 49%;
+  }  
+  #mole6 {
+    top: 65%;
+    left: 79%;
+  }
+  .points{
+    color: white;
+    font-family: 'Aladin', cursive;
+    font-size: 50px;
+  }
