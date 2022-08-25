@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Tag</title>
+</head>
+<body>
+    <audio id="myAudio" controls hidden > 
+        <!-- controls add controler and, loop play on the loop   , autoplay start the audio at starting,hidden hide the cntroler-->
+        <source src="mixkit-long-game-over-notification-276.wav" type="audio/wav"> 
+    </audio>
+    <video controls> 
+        <!-- controls add controler and, loop play on the loop   , autoplay start the audio at starting,hidden hide the cntroler-->
+        <source src="Gambare Gambare Senpai _ remix song.mp4" type="video/mp4"> 
+    </video>
+    <button id="btn1" onclick="performedAudioTask()">play</button>
+    <script>
+    var audio= document.getElementById("myAudio");
+    console.log(myAudio);
+    var btn = document.getElementById("btn1");
+    function performedAudioTask(){
+        myAudio.play();
+        if (myAudio.muted==true){
+            myAudio.muted=false;
+        }
+        else{
+            myAudio.muted=true;
+        }
+        
+    }
+    </script>
+</body>
+</html>
