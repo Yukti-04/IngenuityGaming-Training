@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <title>Canvas</title>
   </head>
   <body>
-    
-    <canvas id="canvas" width="2000" height="900"> </canvas>
+    <div id="loader">
+      <img src="ninja_star.png" id="ball">
+       <button  id="btn">Tap To Play</button>
+        </div>
+    <div id="container" style="display:none;">
+    <canvas id="canvas" width="2100" height="900"> </canvas>
     <!-- <img src="ramen-gif-3.gif" alt="" id="source" /> -->
     <img src="sasukepng.png" alt="this slowpoke moves"   id="source" />
     <img src="narutopng.png" alt="this slowpoke moves"   id="source1" />
+
+    <audio id="sasukeAudio" controls hidden > 
+      <!-- controls add controler and, loop play on the loop   , autoplay start the audio at starting,hidden hide the cntroler-->
+      <source src="narutooooooo.mp3" type="audio/mp3"> 
+  </audio>
+    <audio id="narutoAudio" controls hidden > 
+      <!-- controls add controler and, loop play on the loop   , autoplay start the audio at starting,hidden hide the cntroler-->
+      <source src="naruto_scream_sasuke.mp3" type="audio/mp3"> 
+  </audio>
+    
+</div>
+<audio id="bg" > 
+  <!-- controls add controler and, loop play on the loop   , autoplay start the audio at starting,hidden hide the cntroler-->
+  <source src="An-Epic-Story.mp3" type="audio/mp3"> 
+</audio>
+  <video id="ender">
+    <source src="sasuke vs naruto (valley of the end) - ENG SUBTITLES (online-video-cutter.com).mp4" type="video/mp4" >
+  </video>
     <script src="game.js"></script>
-   
   </body>
 </html>

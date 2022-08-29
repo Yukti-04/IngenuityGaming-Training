@@ -4,11 +4,12 @@
     box-sizing: border-box;
     overflow-x: hidden;
   }
-  body {
+  #container {
     height: 100vh;
     color: rgb(252, 10, 10);
     font-size: 35px;
-    background-image: url('wallpaperflare.com_wallpaper\ \(3\).jpg');
+
+    background-image: url("back.jpg");
     background-size: cover;
     font-family: 'Aboreto', cursive;
     display: flex;
@@ -37,5 +38,16 @@
   #source1{
     position: absolute;
 margin-left: 800px;
+    display: none;
 }
+#ender
+{
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
  
