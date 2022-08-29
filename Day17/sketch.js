@@ -10,23 +10,24 @@ var coinScore = 0;
 
 // Load Assets
 function preload() {
-  bgImage = loadImage("images/bgnew.jpg");
+  bgImage = loadImage("ImagesAssets/konhoaImag.jpg");
   mario_running = loadAnimation(
-    "images/mar1.png",
-    "images/mar2.png",
-    "images/mar3.png",
-    "images/mar4.png",
-    "images/mar5.png",
-    "images/mar6.png"
+    "ImagesAssets/naruto_running1.png",
+    "ImagesAssets/naruto_running2.png",
+    "ImagesAssets/naruto_running3.png",
+    "ImagesAssets/naruto_running4.png",
+    "ImagesAssets/naruto_running5.png",
+    "ImagesAssets/naruto_running6.png"
   );
   brickImage = loadImage("images/brick.png");
   coinImage = loadAnimation("ImagesAssets/shuriken1.png","ImagesAssets/shuriken2.png","ImagesAssets/shuriken3.png","ImagesAssets/shuriken4.png")
+  coinSound=loadSound("sounds/coinSound.mp3")
 }
 
 // create basic Scaleton with their required credentials
 function setup() {
   // Create Canvas
-  createCanvas(1000, 600);
+  createCanvas(1200, 900);
 
   // create Objects
   bg = createSprite(600, 300, 150, 50);
@@ -34,16 +35,18 @@ function setup() {
 
   // Add pictures on Objects
   bg.addImage(bgImage);
+   
   mario.addAnimation("running", mario_running);
 
   // Scale Objects
   bg.scale = 0.5;
-  mario.scale = 0.2;
+  mario.scale = 1.5;
 
   // create Ground
   ground = createSprite(200, 580, 400, 10);
   bricksGroup = new Group();
   coinsGroup = new Group();
+  
 }
 
 // Used to redraw the Objects on the canvas
@@ -51,7 +54,6 @@ function draw() {
   // Make background move and repeate
   bg.velocityX = -5;
   if (bg.x < 100) bg.x = bg.width / 4;
-
   // mario Fly
   if (keyDown("space")) mario.velocityY = -10;
 
@@ -80,12 +82,14 @@ function draw() {
   }
 
 generateCoins();
+// console.log("Score: "+coinScore);
 for (var i = 0; i < coinsGroup.length; i++) {
     var temp = coinsGroup.get(i);
     if (mario.isTouching(temp)) {
       temp.destroy();
-      temp=null;
       coinScore++;
+      temp=null;
+      coinSound.play();
     }
   }
   // Redraw Objects
@@ -93,8 +97,7 @@ for (var i = 0; i < coinsGroup.length; i++) {
 }
 function generateCoins() {
     if (frameCount % 50 == 0) {
-      console.log(frameCount);
-  
+    //   console.log(frameCount);
       var coin = createSprite(300, 100, 40, 10);
       coin.y = random(200, 500);
       coin.addAnimation("rotation",coinImage);
@@ -106,7 +109,7 @@ function generateCoins() {
   }
 function generateBricks() {
   if (frameCount % 80 == 0) {
-    console.log(frameCount);
+    // console.log(frameCount);
 
     var brick = createSprite(1200, 100, 40, 10);
     brick.y = random(50, 450);
