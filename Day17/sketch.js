@@ -10,7 +10,7 @@ var coinScore = 0;
 
 // Load Assets
 function preload() {
-  bgImage = loadImage("ImagesAssets/konhoaImag.jpg");
+  bgImage = loadImage("Day17\ImagesAssets\konhoaImag.jpg  ");
   mario_running = loadAnimation(
     "ImagesAssets/naruto_running1.png",
     "ImagesAssets/naruto_running2.png",
