@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2021/12/20/04/53/covid-19-6882296_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.entry{
+    height: 60%;
+    width: 40%;
+    background-color: #fff;
+    /* / background-color: rgba(49, 53, 53, 0.5); / */
+    background-image: url("https://www.aurora.ca/en/news/resources/COVID-19/TOA_Covid19_Main_Web_Banner_RevMay2020_02.jpg");
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+#header{
+    margin: 10px;
+    color:white;
+    font-family:cursive;
+    font-size: 50px;
+}
+#forme{
+ display: flex;
+ flex-direction: column;
+ font-size: 18px;
+}
+.format{
+    display: flex;
+    justify-content:end;
+    width: 400px;
+    padding: 10px;
+    color: black;
+}
+label{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.h2{
+    width: 180px;
+}
+#cars
+{
+    width: 180px;
+    height: 20px;
+    background-color:transparent;
+
+}
+.rad{
+  
+    width: 180px;
+    font-size: 12px;
+}
+.radi
+{
+    width: 100%;
+    padding: 2px;
+    display: flex;
+}
+#veh{
+    height: 15px;
+    width :15px;
+}
+.text{
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content:end;
+    padding: 10px;
+    height: 50px;
+}
+#text{
+    height: 40px;
+    width:180px;
+    background-color: transparent;
+    border-width: 0 0 1px;
+}
+button{
+    height: 100%;
+    width: 100px;
+    color: gold;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background-color: teal;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 2s;
+            font-weight: bold;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+}
+button:hover
+{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}

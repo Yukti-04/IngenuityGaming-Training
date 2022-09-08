@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url("https://i.pinimg.com/originals/33/b8/db/33b8db1015f6c692d867966c0fa34584.gif");
+    background-size: cover;
+  }
+  canvas {
+    display: block;
+    margin: auto;
+  }

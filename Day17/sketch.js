@@ -10,7 +10,7 @@ var coinScore = 0;
 
 // Load Assets
 function preload() {
-  bgImage = loadImage("Day17\ImagesAssets\konhoaImag.jpg  ");
+  bgImage = loadImage("KONOHA.jpg");
   mario_running = loadAnimation(
     "ImagesAssets/naruto_running1.png",
     "ImagesAssets/naruto_running2.png",
@@ -53,7 +53,7 @@ function setup() {
 function draw() {
   // Make background move and repeate
   bg.velocityX = -5;
-  if (bg.x < 100) bg.x = bg.width / 4;
+  if (bg.x < 150) bg.x = bg.width / 5 ;
   // mario Fly
   if (keyDown("space")) mario.velocityY = -10;
 
